@@ -8,14 +8,15 @@ import { AppComponent } from './app.component';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAfl6h0oR2UfNqIbo8IPC9fKhtkApEriLY",
-  authDomain: "puca-registro.firebaseapp.com",
-  projectId: "puca-registro",
-  storageBucket: "puca-registro.appspot.com",
-  messagingSenderId: "1069460061753",
-  appId: "1:1069460061753:web:6bfeb8973e3669e336d7e8"
+  apiKey: environment.apiKey,
+  authDomain: environment.authDomain,
+  projectId: environment.projectId,
+  storageBucket: environment.projectId,
+  messagingSenderId: environment.messagingSenderId,
+  appId: environment.appId
 };
 
 @NgModule({
